@@ -28,6 +28,7 @@ import Doctorate from "./pages/Doctorate/PhdProgrammes.jsx";
 import Degree from "./pages/Degree/Degree.jsx";
 import Tenders from "./pages/Tenders/Tenders.jsx";
 import History from "./pages/History/History.jsx";
+import RecentUpdates from "./pages/RecentUpdates.jsx";
 import StudentChaptersandClubs from "./pages/StudentChaptersandClubs/StudentChaptersandClubs.jsx";
 import NewsDetails from "./pages/Home/NewsDetails.jsx";
 import EceOverview from "./pages/ECE-Department/ece-overview.jsx";
@@ -38,6 +39,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
+        {/* Home */}
         <Route
           path="/"
           element={
@@ -49,39 +51,10 @@ function App() {
           }
         />
 
-        <Route
-          path="/faq"
-          element={
-            <>
-              <Header />
-              <FAQ />
-              <Footer />
-            </>
-          }
-        />
+        {/* News Page */}
+        <Route path="/news" element={<NewsDetails />} />
 
-        <Route
-          path="/anti-ragging"
-          element={
-            <>
-              <Header />
-              <AntiRagging />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/anti-ragging-committee"
-          element={
-            <>
-              <Header />
-              <AntiRaggingCommittee />
-              <Footer />
-            </>
-          }
-        />
-
+        {/* About Us */}
         <Route
           path="/about/academic-heads"
           element={
@@ -92,24 +65,6 @@ function App() {
             </>
           }
         />
-
-        <Route
-          path="/courses"
-          element={
-            <>
-              <Header />
-              <Courses />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/news"
-          element={
-            <NewsDetails />
-          }
-        />
-
         <Route
           path="/about/principal"
           element={
@@ -120,172 +75,6 @@ function App() {
             </>
           }
         />
-
-        <Route
-          path="/infrastructure"
-          element={
-            <>
-              <Header />
-              <Infrastructure />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/vision-mission"
-          element={
-            <>
-              <Header />
-              <VisionMission />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/convocation"
-          element={
-            <>
-              <Header />
-              <Convocation />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/prospectus"
-          element={
-            <>
-              <Header />
-              <AcademicProspectusPage />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/contact"
-          element={
-            <>
-              <Header />
-              <ContactUs />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/academics/nirf"
-          element={
-            <>
-              <Header />
-              <NIRF />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/helpdesk"
-          element={
-            <>
-              <Header />
-              <HelpDesk />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/ecell"
-          element={
-            <>
-              <Header />
-              <ECell />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/examinations"
-          element={
-            <>
-              <Header />
-              <Examinations />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/sports-facility"
-          element={
-            <>
-              <Header />
-              <SportsFacility />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/fit-india"
-          element={
-            <>
-              <Header />
-              <FitIndiaPage />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/programmes/pu-leet"
-          element={
-            <>
-              <Header />
-              <Leet />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/programmes/phd"
-          element={
-            <>
-              <Header />
-              <Doctorate />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/programmes/degree"
-          element={
-            <>
-              <Header />
-              <Degree />
-              <Footer />
-            </>
-          }
-        />
-
-        <Route
-          path="/notices/tenders"
-          element={
-            <>
-              <Header />
-              <Tenders />
-              <Footer />
-            </>
-          }
-        />
-
         <Route
           path="/about/history"
           element={
@@ -297,9 +86,256 @@ function App() {
           }
         />
 
+        {/* Academics */}
+        <Route
+          path="/vision-mission"
+          element={
+            <>
+              <Header />
+              <VisionMission />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/infrastructure"
+          element={
+            <>
+              <Header />
+              <Infrastructure />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/academics/nirf"
+          element={
+            <>
+              <Header />
+              <NIRF />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Courses & Prospectus */}
+        <Route
+          path="/courses"
+          element={
+            <>
+              <Header />
+              <Courses />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/prospectus"
+          element={
+            <>
+              <Header />
+              <AcademicProspectusPage />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Convocation */}
+        <Route
+          path="/convocation"
+          element={
+            <>
+              <Header />
+              <Convocation />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Student Section */}
+        <Route
+          path="/anti-ragging"
+          element={
+            <>
+              <Header />
+              <AntiRagging />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/anti-ragging-committee"
+          element={
+            <>
+              <Header />
+              <AntiRaggingCommittee />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/fit-india"
+          element={
+            <>
+              <Header />
+              <FitIndiaPage />
+              <Footer />
+            </>
+          }
+        />
         <Route
           path="/student-chapters-clubs"
           element={<StudentChaptersandClubs />}
+        />
+
+        {/* Programmes */}
+        <Route
+          path="/programmes/pu-leet"
+          element={
+            <>
+              <Header />
+              <Leet />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/programmes/phd"
+          element={
+            <>
+              <Header />
+              <Doctorate />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/programmes/degree"
+          element={
+            <>
+              <Header />
+              <Degree />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Other Sections */}
+        <Route
+          path="/examinations"
+          element={
+            <>
+              <Header />
+              <Examinations />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/ecell"
+          element={
+            <>
+              <Header />
+              <ECell />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/sports-facility"
+          element={
+            <>
+              <Header />
+              <SportsFacility />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/notices/tenders"
+          element={
+            <>
+              <Header />
+              <Tenders />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/recent-updates"
+          element={
+            <>
+              <Header />
+              <RecentUpdates />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Contact & Help */}
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Header />
+              <ContactUs />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/helpdesk"
+          element={
+            <>
+              <Header />
+              <HelpDesk />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* FAQ */}
+        <Route
+          path="/faq"
+          element={
+            <>
+              <Header />
+              <FAQ />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* ECE Department */}
+        <Route
+          path="/ece"
+          element={
+            <>
+              <Header />
+              <EceOverview />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/ece/ece-faculty"
+          element={
+            <>
+              <Header />
+              <ECE_Faculty />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/ece/ece-labs"
+          element={
+            <>
+              <Header />
+              <EceLabs />
+              <Footer />
+            </>
+          }
         />
 
         {/* Fallback */}
@@ -313,31 +349,6 @@ function App() {
             </>
           }
         />
-
-        <Route path="/ece" element={
-          <>
-            <Header />
-            <EceOverview />
-            <Footer />
-          </>
-        } />
-
-        <Route path="/ece/ece-faculty" element={
-          <>
-            <Header />
-            <ECE_Faculty />
-            <Footer />
-          </>
-        } />
-
-        <Route path="/ece/ece-labs" element={
-          <>
-            <Header />
-            <EceLabs />
-            <Footer />
-          </>
-        } />
-
       </Routes>
     </HashRouter>
   );
