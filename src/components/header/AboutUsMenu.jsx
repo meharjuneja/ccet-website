@@ -59,9 +59,10 @@ const AboutUsMenu = () => {
     {
       title: "Life @ CCET",
       links: [
-        <span key="tour" className="block w-full cursor-default">
-          Campus Virtual Tour
-        </span>,
+        <Link to="/life/virtual-tour" className="block w-full" key="tour">
+  Campus Virtual Tour
+</Link>
+,
         <a
           href="https://ccet.ac.in/library/"
           target="_blank"

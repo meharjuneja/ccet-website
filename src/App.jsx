@@ -34,6 +34,7 @@ import NewsDetails from "./pages/Home/NewsDetails.jsx";
 import EceOverview from "./pages/ECE-Department/ece-overview.jsx";
 import ECE_Faculty from "./pages/ECE-Department/ece-faculty.jsx";
 import EceLabs from "./pages/ECE-Department/ece-labs.jsx";
+import CampusVirtualTour from "./pages/CampusVirtualTour.jsx";
 import Classrooms from "./pages/Classrooms/Classrooms.jsx";
 
 function App() {
@@ -108,6 +109,17 @@ function App() {
             </>
           }
         />
+        <Route
+  path="/life/virtual-tour"
+  element={
+    <>
+      <Header />
+      <CampusVirtualTour />
+      <Footer />
+    </>
+  }
+/>
+
         <Route
           path="/academics/nirf"
           element={
