@@ -34,6 +34,7 @@ import StudentChaptersandClubs from "./pages/StudentChaptersandClubs/StudentChap
 import NewsDetails from "./pages/Home/NewsDetails.jsx";
 import Canteen from "./pages/Canteen/Canteen.jsx";
 
+
 // ECE Department
 import EceOverview from "./pages/ECE-Department/ece-overview.jsx";
 import ECE_Faculty from "./pages/ECE-Department/ece-faculty.jsx";
@@ -70,6 +71,15 @@ import MechTimeTable from "./pages/Mech-Department/MechTimeTable.jsx";
 import MechSyllabus from "./pages/Mech-Department/MechSyllabus.jsx";
 import MechResearch from "./pages/Mech-Department/MechResearch.jsx";
 
+
+//CSE Department
+import CseOverview from "./pages/CSE-Department/CseOverview.jsx";
+import CseFaculty from "./pages/CSE-Department/CseFaculty.jsx";
+import CseHod from "./pages/CSE-Department/CseHod";
+import CseLabs from "./pages/CSE-Department/CseLabs.jsx";
+import CseTimeTable from "./pages/CSE-Department/CseTimeTable.jsx";
+import CseSyllabus from "./pages/CSE-Department/CseSyllabus.jsx";
+import CseResearch from "./pages/CSE-Department/CseResearch.jsx";
 
 function App() {
     return (
@@ -130,6 +140,15 @@ function App() {
                 <Route path="/ece/ece-faculty" element={<ECE_Faculty/>}/>
                 <Route path="/ece/ece-labs" element={<EceLabs/>}/>
 
+                {/* CSE Department */}
+                <Route path="/academics/cse/overview" element={<CseOverview />} />
+                <Route path="/academics/cse/csefaculty" element={<CseFaculty />}  />
+                <Route path="/academics/cse/hod" element={<CseHod />} />
+                <Route path="/academics/cse/cselabs" element={<CseLabs />}  />
+                <Route path="/academics/cse/csetimetable" element={<CseTimeTable />}  />
+                <Route path="/academics/cse/csesyllabus" element={<CseSyllabus />}  />
+                <Route path="/academics/cse/cseresearch" element={<CseResearch />}  />
+
                 {/* Civil Department */}
                 <Route path="/academics/civil/overview" element={<CivilOverview />} />
                 <Route path="/academics/civil/hod" element={<CivilHod />} />
@@ -156,7 +175,6 @@ function App() {
                 <Route path="/academics/appliedscience/asresearch" element={<ASResearch />}  />
                 <Route path="/academics/appliedscience/astimetable" element={<ASTimeTable />}  />
                 <Route path="/academics/appliedscience/assyllabus" element={<ASSyllabus />}  />
-
 
             </Routes>
             <Footer/>
