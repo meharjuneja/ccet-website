@@ -37,6 +37,7 @@ import Canteen from "./pages/Canteen/Canteen.jsx";
 import AdmissionNotices from "./pages/AdmissionNotices/AdmissionNotices.jsx";
 import EventCalendar from "./pages/EventCalendar/EventCalendar.jsx";
 import AcademicCalendar from "./pages/AcademicCalendar/AcademicCalendar.jsx";
+import StudentCouncil from "./pages/Students-Section/StudentCouncil.jsx";
 import EoaLatest from "./pages/MandatoryDisclosure/EoaLatest.jsx";
 import Partone from "./pages/MandatoryDisclosure/ApplicationPart-1.jsx";
 import Parttwo from "./pages/MandatoryDisclosure/ApplicationPart-2.jsx";
@@ -45,7 +46,7 @@ import OldEOA from "./pages/MandatoryDisclosure/OldEoas.jsx";
 import CampusVirtualTour from "./pages/CampusVirtualTour.jsx";
 import Classrooms from "./pages/Classrooms/Classrooms.jsx";
 import CampusMap from "./pages/CampusMap/CampusMap.jsx";
-import StudentWelfare from "./pages/StudentWelfare/StudentWelfare.jsx"
+import StudentWelfare from "./pages/StudentWelfare/StudentWelfare.jsx";
 import BoysHostel from "./pages/BoysHostel/BoysHostel.jsx";
 import GirlsHostel from "./pages/GirlsHostel/GirlsHostel.jsx";
 import FingerPrintIssue1 from "./pages/FingerPrint/FingerPrint1.jsx";
@@ -116,6 +117,7 @@ function App() {
         <Route path="/anti-ragging" element={<AntiRagging />} />
         <Route path="/anti-ragging-committee" element={<AntiRaggingCommittee />}/>
         <Route path="/student-chapters-clubs" element={<StudentChaptersandClubs />}/>
+        <Route path="/student-council" element={<StudentCouncil />} />
         <Route path="/student-welfare/officials" element={<StudentWelfare/>}/>
         <Route path="/boys-hostel" element={<BoysHostel/>}/>
         <Route path="/girls-hostel" element={<GirlsHostel/>}/>
