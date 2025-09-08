@@ -91,7 +91,6 @@ const Header = () => {
 					links: [
 						{ name: 'Convocation 2023', path: '/academics/convocation-2023' },
 						{ name: 'Students Feedback', path: '/academics/feedback' },
-						{ name: 'Examination', path: '/academics/examination' },
 						{ name: 'E-Akademik', path: '/academics/e-akademik' },
 						{ name: 'E-Cell', path: '/academics/e-cell' },
 						{ name: 'NIRF', path: '/academics/nirf' },
@@ -221,7 +220,6 @@ const Header = () => {
 				{
 					title: 'Old Notices',
 					links: [
-						{ name: 'Forms', path: '/notices/forms' },
 						{ name: 'Tenders', path: '/notices/tenders' },
 						{ name: 'Online Fee Payment Link', path: '/notices/fee-payment' }
 					],
@@ -229,8 +227,8 @@ const Header = () => {
 				{
 					title: 'E-News Letters (pdf\'s)',
 					links: [
-						{ name: 'FingerPrint (Volume-VII, Issue I)', path: '/notices/fingerprint-vol7-i' },
-						{ name: 'FingerPrint (Volume-VII, Issue II)', path: '/notices/fingerprint-vol7-ii' }
+						{ name: 'FingerPrint (Volume-VII, Issue I)', path: "/magazine/fingerprint-vii-1" },
+						{ name: 'FingerPrint (Volume-VII, Issue II)', path: "/magazine/fingerprint-vii-2" }
 					],
 				},
 				{
