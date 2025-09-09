@@ -54,7 +54,7 @@ import BoysHostel from "./pages/BoysHostel/BoysHostel.jsx";
 import GirlsHostel from "./pages/GirlsHostel/GirlsHostel.jsx";
 import FingerPrintIssue1 from "./pages/FingerPrint/FingerPrint1.jsx";
 import FingerPrintIssue2 from "./pages/FingerPrint/FingerPrint2.jsx";
-import ExamNotice1 from "./pages/ExamNotice/ExamNotice1.jsx";
+
 import ExamNotice2 from "./pages/ExamNotice/ExamNotice2.jsx";
 import Scholarship from './pages/Students-Section/Scholarship.jsx';
 import Forms from './pages/Forms/Forms.jsx';
@@ -224,7 +224,7 @@ function App() {
                 {/* Notices */}
                 <Route path="/magazine/fingerprint-vii-1" element={<FingerPrintIssue1 />} />
                 <Route path="/magazine/fingerprint-vii-2" element={<FingerPrintIssue2 />} />
-                <Route path="/notices/exam-notice-1" element={<ExamNotice1 />} />
+
                 <Route path="/notices/exam-notice-2" element={<ExamNotice2 />} />
 
             </Routes>
